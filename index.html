@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* styles.css */
+
+/* General styles */
+body.Landing {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-container,
+.link-container + div {
+  margin-bottom: 10px;
+}
+
+.link-container a,
+.link-container + div a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.link-container a:hover,
+.link-container + div a:hover {
+  text-decoration: underline;
+}
+
+.link-container a:active,
+.link-container + div a:active {
+  color: #0056b3;
+}
+
+  </style>
+</head>
+<body class="Landing">
+  <section>
+    <div class="link-container">
+      <a href="my-webpage-grid.html">Simple-Grid</a>
+    </div>
+    <div>
+      <a href="my-website.html">Flexbox</a>
+    </div>
+  </section>
+</body>
+</html>
