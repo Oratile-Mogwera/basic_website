@@ -308,3 +308,313 @@ body {
      /* padding: 10px;
   } 
    */
+ body {
+     background-color: bisque;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     height: 100%;
+     width: 100%;
+     margin: ;
+     padding: 0;
+     left: 0;
+     top: 0;
+     font-size: 100%;
+
+ }
+
+ h1 {
+     text-align: center;
+     color: rgb(150, 133, 167);
+     border-color: blueviolet;
+     border: 3px solid rgb(150, 133, 167);
+ }
+
+ .intro {
+     background-image: url(./Cpt.jpg);
+     background-repeat: no-repeat;
+     width: 100%;
+     
+ }
+
+ table {
+     width: 100%;
+ }
+
+ .me {
+     width: 50px;
+     height: 50px;
+     padding: 1em;
+     border: 3px solid blue justify-self: flex-end;
+     
+ }
+
+
+ h2 {
+     margin: 1em;
+ }
+
+ h3 {
+     margin-top: -10px;
+ }
+
+ /* h4 {
+    width: 50%;
+} */
+
+ .modules {
+     display: flex;
+     width: 100%;
+ }
+
+ .container {
+     display: flex;
+     width: 100%;
+ }
+
+ .constHillPara {
+     display: flex;
+ }
+
+ .NelPara {
+     order: 1;
+ }
+
+
+ .goldReefPara {
+     width: 40%;
+ }
+
+ .historicalPlaces {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+
+ .pictur {
+     width: 150px;
+     height: 150px;
+
+ }
+
+
+ .container {
+     display: flex;
+
+
+ }
+
+ .row {
+     display: flex;
+     padding: 20px;
+
+
+ }
+
+
+
+ @media (min-width: 960px) {
+     .intro {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .container {
+
+         display: flex;
+     }
+
+     .parisPara {
+         display: flex;
+     }
+
+     .language {
+         width: 100%;
+     }
+
+     /* .modules {
+        display: block;
+    } */
+
+
+     /* New rule for historical places on larger screens */
+     .historicalPlaces .row {
+         justify-content: space-between;
+         /* Distribute items evenly */
+         width: 100%;
+         /* Ensure rows take full width */
+     }
+
+     .historicalPlaces .row div {
+         flex: 1 0 33.33%;
+         /* Three equal columns */
+         padding: 10px;
+     }
+
+     .NelPara {
+         order: 2;
+     }
+ }
+
+ /* New media query for smaller screens */
+ @media only screen and (max-width: 768px) {
+
+     /* Adjust width of text elements for smaller screens */
+     .nelsonMandelaPara,
+     .goldReefPara {
+         width: 100%;
+         /* Make full width on small screens */
+     }
+
+
+     /* Additional changes you might want to consider: */
+     h2,
+     h3,
+     h4,
+     p {
+         font-size: 1em;
+         /* Adjust font size for better readability */
+     }
+
+     .modules::after {
+         content: "";
+         display: block;
+         width: 80%;
+         height: 1px;
+         background-color: whitesmoke
+          margin: 10px 0;
+     }
+
+     body {
+         background: rgb(177, 133, 77);
+         /* margin: 10px 0; */
+     }
+
+     .modules {
+         display: inline-block;
+     }
+
+     .container {
+         display: inline-block;
+     }
+
+
+
+
+     /* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Negative margin for spacing between columns 
+  
+  .name h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .intro,
+  .city,
+  .language,
+  .degree {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro .OraImage img,
+  .city .ParisImage img,
+  .degree .modules img,
+  .historicalPlaces img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #007bff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  .frenchTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .frenchTable th,
+  .frenchTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Media Queries for Responsive Design */
+
+     /* @media only screen and (max-width: 768px) {
+    .intro,
+    .city,
+    .language,
+    .degree {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro .OraImage img,
+    .city .ParisImage img,
+    .degree .modules img {
+      margin: 0 auto 10px auto;
+    }
+  
+    .historicalPlaces {
+      margin-top: 40px;
+    }
+  
+    .row {
+      flex-direction: column;
+  }
+  
+    .historicalPlaces img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* New rule for three columns on large screens*/
+     /* .historicalPlaces .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .historicalPlaces .row div {
+    flex: 1 0 33.33%; /* Flex-grow, flex-shrink, and flex-basis for three equal columns */
+     /* padding: 10px;
+  } 
+   */
